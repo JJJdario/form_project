@@ -1,0 +1,158 @@
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(156, 131, 48, 0.602);
+    margin: 0 0;
+}
+
+form {
+    margin: 0 30px 30px;
+}
+
+* {
+    transition: all 0.4s;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    font-family: 'roboto';
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: white;
+    padding: 30px;
+    letter-spacing: 2px;
+    background-color: rgb(64, 143, 54);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: 30px 0 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgb(54, 54, 56);
+    margin: 0 30px 60px;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+legend {
+    font-family: 'open sans';
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.3rem;
+    color: rgb(37, 36, 36);
+}
+
+.line1 {
+    border: solid 3px black;
+    margin-bottom: 0;
+}
+
+.line2,
+.line3 {
+    border: solid 1px black;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.first input,
+select {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+#zip {
+    width: 50%;
+    display: block;
+}
+
+ ::placeholder {
+    font-family: 'ital';
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 20px;
+}
+
+select:focus,
+input:focus,
+#topics:focus {
+    background-color: rgb(133, 214, 133);
+}
+
+select {
+    color: grey;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 20px 10px 20px 0;
+}
+
+.format {
+    margin-top: 30px;
+}
+
+#topics {
+    width: 100%;
+    height: 6rem;
+    border: none;
+}
+
+button {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(43, 122, 12);
+    color: white;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #zip {
+        width: 20%;
+    }
+    input#zip {
+        display: inline;
+        width: 150px;
+        text-align: left;
+    }
+    form {
+        margin: 0 20%;
+    }
+    .first label {
+        width: 150px;
+        display: inline-block;
+    }
+    .first input,
+    .first select {
+        width: calc(100% - 160px);
+    }
+}
