@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Registration Form">
+    <title>Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
 
     <header>
-        <h1 id="review">The code review</h1>
+        <h1>The code review</h1>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
@@ -28,35 +28,35 @@
         <fieldset class="first">
 
             <legend>Contact Information</legend>
+            <div class="container">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Required"><br>
+                </div>
 
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="Required"><br>
+                </div>
 
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" required placeholder="Required"><br>
+                <div>
+                    <label for="number">Phone number</label>
+                    <input type="tel" name="number" id="number" placeholder="Phone"><br>
+                </div>
 
+                <div>
+                    <label for="address">Street Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address"><br>
+                </div>
 
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City"><br>
+                </div>
 
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" required placeholder="Required"><br>
-
-
-
-            <label for="number">Phone number</label>
-            <input type="tel" name="number" id="number" placeholder="Phone"><br>
-
-
-
-            <label for="address">Street Address</label>
-            <input type="text" name="address" id="address" placeholder="Address"><br>
-
-
-
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" placeholder="City"><br>
-
-
-
-            <label for="state">State</label>
-            <select name="state" id="state">
+                <div>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
             <option id="pl" value="pl">Choose State</option>
             <option value="texas">Texas</option>
             <option value="georgia">Georgia</option>
@@ -65,13 +65,14 @@
             <option value="kentucky">Kentucky</option>
             <option value="colorado">Colorado</option>
             </select><br>
+                </div>
 
+                <div class="zip">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip" placeholder="zip">
+                </div>
 
-
-            <label for="zip">Zip Code</label>
-            <input type="text" name="zip" id="zip" placeholder="zip">
-
-
+            </div>
         </fieldset>
 
 
@@ -121,12 +122,13 @@
             </div>
 
         </fieldset>
-
-        <button type="submit">Sign Up</button>
-
-        <footer>
+        <div>
+            <button type="submit">Sign Up</button>
             <p class="copy">Copyright the code Review</p>
-        </footer>
+        </div>
+
+
+
 
     </form>
 </body>
