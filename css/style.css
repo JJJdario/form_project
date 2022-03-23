@@ -144,6 +144,12 @@
      margin-top: 30px;
  }
  
+ .bt {
+     display: flex;
+     margin-top: 90px;
+     margin-bottom: 20px;
+ }
+ 
  button {
      width: 100%;
      font-size: 1.5rem;
@@ -152,8 +158,6 @@
      background-color: rgb(43, 122, 12);
      color: white;
      border: none;
-     margin-top: 90px;
-     margin-bottom: 20px;
      border-radius: 5px;
      padding: 20px 20px;
  }
